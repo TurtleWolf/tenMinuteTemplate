@@ -1,15 +1,30 @@
-[URL address](https://domains.google.com/registrar "Google's URL addressing")  
-[SSL certificate](https://www.google.com "7 dollars a month")  
 [GitHub Account](https://github.com/TurtleWolf/tenMinuteTemplate "collaborate with me on github.com")  
-[Cloud Nine](https://ide.c9.io "Developement in the could")  
-[Heroku.com/login](https://id.heroku.com/login "Cloud hosting on heroku")  
-
 git init  
 git add README.md  
 git commit -m "first commit"  
-git remote add origin https://github.com/TurtleWolf/tenMinuteTemplates.git  
+git remote add origin https://github.com/###/###MinuteTemplates.git  
 git push -u origin master  
 
+[Cloud Nine](https://ide.c9.io "Developement in the could")
+
+
+
+[Heroku.com/login](https://id.heroku.com/login "Cloud hosting on heroku") 
+
+[URL address](https://domains.google.com/registrar "Google's URL addressing")  
+
+[SSL certificate](https://www.google.com "7 dollars a month") 
+
+ 
+
+
+
+
+
+
+
+
+////////////////////////////////////////////
 every assignment covers the same basic setup  
 Body-Parser, Cors, Express & Nodemon.  
 I've added favicon.ico in the public directory  
