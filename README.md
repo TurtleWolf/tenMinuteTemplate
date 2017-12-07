@@ -1,6 +1,6 @@
 [URL address](https://domains.google.com/registrar "Google's URL addressing")  
 [SSL certificate](https://www.google.com "7 dollars a month")  
-[GitHub Account](https://github.com "collaborate with me on github.com")  
+[GitHub Account](https://github.com/TurtleWolf/tenMinuteTemplate "collaborate with me on github.com")  
 [Cloud Nine](https://ide.c9.io "Developement in the could")  
 [Heroku.com/login](https://id.heroku.com/login "Cloud hosting on heroku")  
 
