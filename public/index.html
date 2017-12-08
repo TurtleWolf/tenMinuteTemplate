@@ -42,7 +42,8 @@
   <!-- Add your site or application content here -->
   <div class="container-fluid container-transparent text-center">
     <div class="row text-justify">
-      <div class="col-sm left_fl8d">
+      
+<div class="col-sm left_fl8d">
 <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
       <h4 class="text-left"><a href="git remote add origin https://github.com/TurtleWolf/ScriptHammer.git"><kbd>https://github.com/TurtleWolf/ScriptHammer.git</kbd></a></h4>
       <p>
@@ -72,7 +73,7 @@ git push -u origin master<br>
       </div>
       <!-- end of column2 -->
       
-      <div class="col-sm mid_fl8d">
+<div class="col-sm mid_fl8d">
 <h4 class="text-left"><a href="https://id.heroku.com/login"><kbd>https://Hosting_@_Heroku.com</kbd></a></h4>        
 https://fast-retreat-54148.herokuapp.com/
 ("Cloud hosting on heroku")
@@ -84,7 +85,18 @@ https://fast-retreat-54148.herokuapp.com/
         <kbd>heroku create</kbd><br>
         <kbd>git remote -v</kbd><br>
         <kbd>heroku git:remote -a fast-retreat-54148</kbd><br>
-        <kbd>git push heroku master</kbd><br><br>
+        <kbd>git push heroku master</kbd><br>
+<div class="col-md-10 col-sm-12 col-xs-12 purple-box comment_html"><p></p><p>Howdy again,</p>
+<p>So there are two steps for any custom domain. First the domain has to be registered for the correct application. I can see that the domains <code>www.scripthammer.com</code> and <code>scripthammer.com</code> are both listed under the stark-spire-40922 application. You'll need to remove them either individual with <code>heroku domains:remove</code> or you can clear them all with <code>heroku domains:clear</code>. Given that you don't have any other domains on stark-spire, I would just do:</p>
+<pre><code>heroku domains:clear -a stark-spire-40922
+</code></pre>
+<p>Then you can do <code>heroku domains:add www.scripthammer.com -a fast-retreat-54148</code> and <code>heroku domains:add scripthammer.com -a fast-retreat-54148</code>.</p>
+<p>The second step is to make sure DNS records are correct. Luckily, in this situation they won't have changed since you already had it working for <code>stark-spire-40922</code> so you don't have to do anything here, but you can always double check by running <code>heroku domains -a fast-retreat-54148</code> and it will show the records you'll need to have which you can check your DNS provider to see if they are correct.</p>
+<p>Best,<br>
+Goose</p><p></p></div><!-- end of gOOSE comments -->
+
+
+        <br>
         <section class="text-center">
           <a href="http://turtlewolfe.com">
             <img src="https://raw.githubusercontent.com/TurtleWolf/expressTemplate/master/public/favicon.ico" alt="favicon" height="16" width="16">
@@ -99,7 +111,7 @@ https://fast-retreat-54148.herokuapp.com/
       </div>
       <!-- end of column3 -->
       
-      <div class="col-sm c2right_fl8d">
+<div class="col-sm c2right_fl8d">
         <h4 class="text-left"><a href="https://domains.google.com/registrar"><kbd>https://URL addresses</kbd></a></h4>
         <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
         <p>"Google's URL addressing"</p>
@@ -108,24 +120,29 @@ https://fast-retreat-54148.herokuapp.com/
       </div>
       <!-- end of column4 -->
       
-      <div class="col-sm right_fl8d">
+<div class="col-sm right_fl8d">
 <h4 class="text-left"><a href="https://github.com/TurtleWolf/expressTemplate"><kbd>https://SSL Certificates</kbd></a></h4>
 [SSL certificate](https://www.google.com "7 dollars a month")<br>
 Upgrade to paid dynos to configure Heroku SSL<br>
 Domain Name System Security Extensions (DNSSEC)<br>
       </div>
       <!-- end of column5 -->
+
     </div>
     <!-- end of div class row -->
+
   </div>
   <!-- end of container div -->
+
   <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
   <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>');</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
   <!-- Boot Strap 4 CDN -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function() {
