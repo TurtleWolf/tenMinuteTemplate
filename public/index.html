@@ -86,10 +86,10 @@ https://fast-retreat-54148.herokuapp.com/<br>
         <kbd>git remote -v</kbd><br>
         <kbd>heroku git:remote -a fast-retreat-54148</kbd><br>
         <kbd>git push heroku master</kbd><br><br>
+<h3><a href="https://devcenter.heroku.com/articles/pointdns">Domains in Heroku</a></h3>        
+<kbd>heroku addons:create pointdns:medium</kbd><br><br>
 
 <div class="col-md-10 col-sm-12 col-xs-12 purple-box comment_html">
-<h4 class="text-left"><a href="https://help.heroku.com/tickets/535228"><kbd>https://help@heroku.com</kbd></a></h4>
-
 <p>There are two steps for any custom domain. First the domain has to be registered for the correct application. I can see that the domains <code>www.scripthammer.com</code> and <code>scripthammer.com</code> are both listed under the stark-spire-40922 application.
 Remove them either individually with <br><kbd>heroku domains:remove</kbd> or clear them all with <br><kbd>heroku domains:clear</kbd></p>
         <pre><code>
@@ -103,8 +103,12 @@ Remove them either individually with <br><kbd>heroku domains:remove</kbd> or cle
 
 <h4 class="text-left"><a href="https://help.heroku.com/tickets/535228"><kbd>https://DNSSEC_@_Heroku.com</kbd></a></h4>
 
-<p>The second step is to make sure DNS records are correct. Luckily, in this situation they won't have changed since you already had it working for <code>stark-spire-40922</code> so you don't have to do anything here, but you can always double check by running <code>heroku domains -a fast-retreat-54148</code> and it will show the records you'll need to have which you can check your DNS provider to see if they are correct.</p>
+<p>The second step is to make sure DNS records are correct. Luckily, in this situation they won't have changed since you already had it working for <code>stark-spire-40922</code> so you don't have to do anything here,
+but you can always double check by running<br><kbd>heroku domains -a fast-retreat-54148</kbd> and it will show the records you'll need to have which you can check your DNS provider to see if they are correct.</p>
+        <kbd>heroku addons:open pointdns</kbd><br>
+        <kbd>heroku addons:destroy pointdns</kbd><br>
 </div><!-- end of gOOSE comments -->
+
         <br>
         <section class="text-center">
           <a href="http://turtlewolfe.com">
