@@ -1,3 +1,5 @@
+[ ![Codeship Status for TurtleWolf/tenMinuteTemplate](https://app.codeship.com/projects/fdd02260-0118-0136-96db-56d2b95b78b6/status?branch=master)](https://app.codeship.com/projects/279936)
+
 [GitHub Account](https://github.com/TurtleWolf/tenMinuteTemplate "collaborate with me on github.com")  
 git init  
 git add README.md  
